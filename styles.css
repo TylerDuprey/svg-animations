@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0;
+  background-image: url('svgs/background.svg');
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  transition: color .35s ease-in;
+}
+
+
+a:hover {
+  color: #111;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  margin-left: .5rem;
+}
+
+nav svg {
+  width: 1rem;
+}
+
+nav ul li .nav-icon {
+  transition: fill .35s ease-in;
+}
+
+nav ul li:hover .nav-icon {
+  fill: #111;
+}
+
+.logo {
+  width: 140px;
+  height: 120px;
+  transform: none;
+  transition: transform .25s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+  transform-origin: center center;
+}
+
+.logo-words {
+  opacity: 0;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+
+main svg .nose_and_eyes{
+  fill:#2D3339;
+}
+main svg .brows{
+  fill:#DA8058;
+}
+
+main svg .white{
+  fill:#FBFEFF;
+  }
+
+.corgi-container {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.corgi-container svg {
+  width: 20%;
+  transform: rotate(0deg);
+  transition: transform .45s ease-out;
+}
+.corgi-container svg:hover {
+  width: 20%;
+  transform: rotate(20deg);
+}
+.medium {
+  color: #b97f5b;
+}
+
+.light {
+  color: #e9aa82;
+}
+
+.dark {
+  color: #834b29;
+}
+
+.grey {
+  color: #52595e;
+}
+
+.white {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+@media screen and (min-width: 420px) {
+  .logo-heading {
+    display: none;
+  }
+  .logo-words {
+    opacity: 1;
+  }
+}
